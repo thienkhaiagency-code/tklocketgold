@@ -1,0 +1,9 @@
+#!name=Locket Gold iutdyy
+#!desc=Mở khóa Locket Gold
+
+[Script]
+http-response ^https:\/\/firebaseremoteconfig\.googleapis\.com\/v1\/projects\/.* script-path=https://raw.githubusercontent.com/thienkhaiagency-code/locketgold/main/locket.js, requires-body=true, max-size=0
+http-response ^https:\/\/api\.revenuecat\.com\/v1\/subscribers\/.* script-path=https://raw.githubusercontent.com/thienkhaiagency-code/locketgold/main/locket.js, requires-body=true, max-size=0
+
+[MITM]
+hostname = firebaseremoteconfig.googleapis.com, api.revenuecat.com
